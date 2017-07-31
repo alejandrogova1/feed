@@ -5,7 +5,7 @@
 </ion-header>
 
 <ion-content padding>
-  <ion-card *ngFor="let card of posts">
+  <ion-card *ngFor="let card of posts | async">
     <ion-card-content>
       <ion-card-title>
         {{card.title}}
